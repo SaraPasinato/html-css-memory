@@ -66,23 +66,33 @@ header h1{
    background-position: center;
    background-size: contain;
    background-repeat: no-repeat;
+   
 }
 
 .row .card p{
     background-color: white;
     position:absolute;
     bottom: 0;
-    left: 35px;
+    left: 30px;
     color:fuchsia;
     font-weight: 400;
     font-size: 30px;
-
+    display: none;
 }
 
+
+
 /* cards hover*/
-    #first .card:hover:first-child, #second .card:hover:first-child{
-    
-    cursor: pointer;
+
+/* to hidden p */
+.row .card:hover p{
+    display: initial;
+    text-align: center;
+}
+
+#first .card:hover:first-child, #second .card:hover:first-child{
+  
+   cursor: pointer;
 
     width: calc(100%/4 - 10px);
     height: calc(100% - 20px);
@@ -93,8 +103,9 @@ header h1{
     background-repeat: no-repeat;
     border-radius: 10%;
     box-shadow: 2px 6px 10px #888888;
-   
+ 
 }
+
 
 #first .card:hover:last-child,#third .card:hover:last-child {
     
