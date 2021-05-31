@@ -21,3 +21,11 @@ header h1{
     text-transform: uppercase;
     text-align: center;
 }
+
+/* Footer*/
+
+footer p{
+    font-size:large;
+    text-transform: capitalize;
+    text-align:center;
+}
